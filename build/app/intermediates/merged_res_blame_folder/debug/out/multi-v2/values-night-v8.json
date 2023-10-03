@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.qr_scanner.app-mergeDebugResources-20:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.qr_scanner.app-mergeDebugResources-21:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/res/values-night/styles.xml",

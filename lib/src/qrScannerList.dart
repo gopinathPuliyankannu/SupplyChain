@@ -96,13 +96,19 @@ class _qrlistState extends State<qrlist> with SingleTickerProviderStateMixin {
     try {
 
       var uri = Uri.parse(widget.url);
-      final urlEncode = Uri.parse('http://ec2-13-53-122-33.eu-north-1.compute.amazonaws.com/api/supplychain/0001111003023/${uri.queryParameters['param']}');
+       var params = uri.queryParameters['param'];
+      final urlEncode = Uri.parse('http://ec2-13-53-122-33.eu-north-1.compute.amazonaws.com/api/supplychain/0001111003023/${params}');
       // final urlEncode = Uri.parse(widget.url);
       // final urlEncode = Uri.parse(
       //     'http://ec2-13-53-122-33.eu-north-1.compute.amazonaws.com/api/supplychain/0001111003023/3');
       // Uri.parse('http://13.53.122.33/api/supplychain/0001111003023/2');
       print(urlEncode);
-      final response = await get(urlEncode);
+      final response = await get(urlEncode, headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,PUT,PATCH,POST,DELETE",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+
+      });
       debugPrint("response $response.body");
       final String jsonString = response.body;
       // await rootBundle.loadString('assets/images/static.json');

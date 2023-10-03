@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.qr_scanner.app-mergeDebugResources-20:/values-v24/values-v24.xml",
+            "outputFile": "com.example.qr_scanner.app-mergeDebugResources-21:/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/gopinath.puliyan/.gradle/caches/transforms-3/23f34eb679aa78d319ba4cd6be929827/transformed/appcompat-1.4.2/res/values-v24/values-v24.xml",

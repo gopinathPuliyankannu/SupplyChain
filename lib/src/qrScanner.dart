@@ -3,6 +3,12 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:qr_scanner/src/qrScannerList.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'dart:io' show Platform;
+// import 'dart:html' as html;
+import 'package:uni_links/uni_links.dart';
+import 'dart:async';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class QRScanner extends StatefulWidget {
   const QRScanner({Key? key}) : super(key: key);
@@ -28,6 +34,40 @@ class _QRScannerState extends State<QRScanner>
   void dispose() {
     controller?.dispose();
     super.dispose();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    checkStatus();
+  }
+
+
+  bool isQueryParamPresent(String paramName, String url) {
+    // Parse the URL
+    Uri uri = Uri.parse(url);
+
+    // Check if the query parameter exists
+    return uri.queryParameters.containsKey(paramName);
+  }
+
+  void checkStatus()async{
+    print(kIsWeb);
+    if (kIsWeb) {
+      final initialLink = await getInitialLink();
+      print(initialLink);
+      // Your app is running in a web browser.
+      String url = initialLink.toString();
+      String paramNameToCheck = 'param';
+
+      bool isPresent = isQueryParamPresent(paramNameToCheck, url);
+      if (isPresent) {
+        Route route = MaterialPageRoute(builder: (context) => qrlist(url: url));
+        Navigator.pushReplacement(context, route);
+        // Navigator.push(context,
+        //     MaterialPageRoute(builder: (context) => qrlist(url: url)));
+      }
+    }
   }
 
   void _onQRViewCreated(QRViewController controller) {

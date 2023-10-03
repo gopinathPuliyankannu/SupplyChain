@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.qr_scanner.app-mergeDebugResources-20:/values-id/values-id.xml",
+            "outputFile": "com.example.qr_scanner.app-mergeDebugResources-21:/values-id/values-id.xml",
             "map": [
                 {
                     "source": "/Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/res/values-id/values-id.xml",
