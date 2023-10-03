@@ -94,8 +94,10 @@ class _qrlistState extends State<qrlist> with SingleTickerProviderStateMixin {
 
   Future<ProductDetails?> loadProductDetails() async {
     try {
-      // setLoader(true);
-      final urlEncode = Uri.parse(widget.url);
+
+      var uri = Uri.parse(widget.url);
+      final urlEncode = Uri.parse('http://ec2-13-53-122-33.eu-north-1.compute.amazonaws.com/api/supplychain/0001111003023/${uri.queryParameters['param']}');
+      // final urlEncode = Uri.parse(widget.url);
       // final urlEncode = Uri.parse(
       //     'http://ec2-13-53-122-33.eu-north-1.compute.amazonaws.com/api/supplychain/0001111003023/3');
       // Uri.parse('http://13.53.122.33/api/supplychain/0001111003023/2');
