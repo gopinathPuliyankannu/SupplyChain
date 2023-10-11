@@ -13,8 +13,8 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:2:2-64
-15-->/Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:2:19-61
+15-->/Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:3:2-64
+15-->/Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:3:19-61
 16
 17    <permission
 17-->[androidx.core:core:1.10.1] /Users/gopinath.puliyan/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
@@ -73,99 +73,135 @@
 45-->[androidx.core:core:1.10.1] /Users/gopinath.puliyan/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 46        android:debuggable="true"
 47        android:icon="@mipmap/ic_launcher"
-48        android:label="qr_scanner" >
-49        <activity
-50            android:name="com.example.qr_scanner.MainActivity"
-51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-52            android:exported="true"
-53            android:hardwareAccelerated="true"
-54            android:launchMode="singleTop"
-55            android:theme="@style/LaunchTheme"
-56            android:usesCleartextTraffic="true"
-57            android:windowSoftInputMode="adjustResize" >
-58
-59            <!--
-60                 Specifies an Android theme to apply to this Activity as soon as
-61                 the Android process has started. This theme is visible to the user
-62                 while the Flutter UI initializes. After that, this theme continues
-63                 to determine the Window background behind the Flutter UI.
-64            -->
-65            <meta-data
-66                android:name="io.flutter.embedding.android.NormalTheme"
-67                android:resource="@style/NormalTheme" />
-68
-69            <intent-filter>
-70                <action android:name="android.intent.action.MAIN" />
-71
-72                <category android:name="android.intent.category.LAUNCHER" />
-73            </intent-filter>
-74        </activity>
-75        <!--
-76             Don't delete the meta-data below.
-77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-78        -->
-79        <meta-data
-80            android:name="flutterEmbedding"
-81            android:value="2" />
-82
-83        <activity
-83-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
-84            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-84-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
-85            android:exported="false"
-85-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
-86            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-86-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+48        android:label="qr_scanner"
+49        android:usesCleartextTraffic="true" >
+50        <activity
+51            android:name="com.example.qr_scanner.MainActivity"
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+53            android:exported="true"
+54            android:hardwareAccelerated="true"
+55            android:launchMode="singleTop"
+56            android:theme="@style/LaunchTheme"
+57            android:usesCleartextTraffic="true"
+58            android:windowSoftInputMode="adjustResize" >
+59
+60            <!--
+61                 Specifies an Android theme to apply to this Activity as soon as
+62                 the Android process has started. This theme is visible to the user
+63                 while the Flutter UI initializes. After that, this theme continues
+64                 to determine the Window background behind the Flutter UI.
+65            -->
+66            <meta-data
+67                android:name="io.flutter.embedding.android.NormalTheme"
+68                android:resource="@style/NormalTheme" />
+69
+70            <intent-filter android:autoVerify="true" >
+71                <action android:name="android.intent.action.VIEW" />
+72
+73                <category android:name="android.intent.category.DEFAULT" />
+74                <category android:name="android.intent.category.BROWSABLE" />
+75                <!-- Accepts URIs that begin with https://YOUR_HOST -->
+76                <data
+77                    android:host="papayacoders.in"
+78                    android:scheme="https" />
+79                <data
+80                    android:host="6525f74294c7a36128b91b90--dancing-semolina-ae1ea5.netlify.app"
+81                    android:scheme="https" />
+82            </intent-filter>
+83            <intent-filter>
+84                <action android:name="android.intent.action.MAIN" />
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
 87
-88        <uses-library
-88-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-89            android:name="androidx.window.extensions"
-89-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-90            android:required="false" />
-90-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-91        <uses-library
-91-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-92            android:name="androidx.window.sidecar"
-92-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-93            android:required="false" />
-93-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+88                <data android:scheme="https" />
+89                <data android:host="6525f74294c7a36128b91b90--dancing-semolina-ae1ea5.netlify.app" />
+90                <!-- <action android:name="android.intent.action.VIEW" /> -->
+91                <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+92                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+93
 94
-95        <provider
-95-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-96            android:name="androidx.startup.InitializationProvider"
-96-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-97            android:authorities="com.example.qr_scanner.androidx-startup"
-97-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-98            android:exported="false" >
-98-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-99            <meta-data
-99-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-100-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-101                android:value="androidx.startup" />
-101-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-102            <meta-data
-102-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/f31cdfb213b879077c244df043816118/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-103-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/f31cdfb213b879077c244df043816118/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-104                android:value="androidx.startup" />
-104-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/f31cdfb213b879077c244df043816118/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-105        </provider>
-106
-107        <activity
-107-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
-108            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-108-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
-109            android:clearTaskOnLaunch="true"
-109-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
-110            android:screenOrientation="sensorLandscape"
-110-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
-111            android:stateNotNeeded="true"
-111-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
-112            android:theme="@style/zxing_CaptureTheme"
-112-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
-113            android:windowSoftInputMode="stateAlwaysHidden" />
-113-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
-114    </application>
-115
-116</manifest>
+95                <!-- <data android:scheme="https"  android:host="papayacoders.in"/> -->
+96                <!-- <data android:scheme="http"/> -->
+97                <!-- <data android:scheme="https"  android:host="nuohost.com"/> -->
+98                <!-- <data android:scheme="https"  android:host="relevantz.com"/> -->
+99                <!-- <data android:scheme="https"  android:host="6524d945fb2158131521cd80&#45;&#45;transcendent-mochi-c96a59.netlify.app"/> -->
+100
+101            </intent-filter>
+102
+103            <!-- <intent-filter> -->
+104            <!-- <action android:name="android.intent.action.VIEW" /> -->
+105            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+106            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+107            <!-- <data android:scheme="https" android:host="6524d945fb2158131521cd80&#45;&#45;transcendent-mochi-c96a59.netlify.app" /> &lt;!&ndash; Replace with your custom scheme &ndash;&gt; -->
+108            <!-- </intent-filter> -->
+109
+110        </activity>
+111        <!--
+112             Don't delete the meta-data below.
+113             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+114        -->
+115        <meta-data
+116            android:name="flutterEmbedding"
+117            android:value="2" />
+118
+119        <activity
+119-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+120            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+120-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+121            android:exported="false"
+121-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+122            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+122-->[:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+123
+124        <uses-library
+124-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+125            android:name="androidx.window.extensions"
+125-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+126            android:required="false" />
+126-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+127        <uses-library
+127-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+128            android:name="androidx.window.sidecar"
+128-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+129            android:required="false" />
+129-->[androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+130
+131        <provider
+131-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+132            android:name="androidx.startup.InitializationProvider"
+132-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+133            android:authorities="com.example.qr_scanner.androidx-startup"
+133-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+134            android:exported="false" >
+134-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+135            <meta-data
+135-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+136                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+136-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+137                android:value="androidx.startup" />
+137-->[androidx.emoji2:emoji2:1.0.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/a282641d604ecb4ae5332e32c2c94657/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+138            <meta-data
+138-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/f31cdfb213b879077c244df043816118/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+139                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+139-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/f31cdfb213b879077c244df043816118/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+140                android:value="androidx.startup" />
+140-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/f31cdfb213b879077c244df043816118/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+141        </provider>
+142
+143        <activity
+143-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:47:9-53:63
+144            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+144-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:48:13-74
+145            android:clearTaskOnLaunch="true"
+145-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:49:13-45
+146            android:screenOrientation="sensorLandscape"
+146-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:50:13-56
+147            android:stateNotNeeded="true"
+147-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:51:13-42
+148            android:theme="@style/zxing_CaptureTheme"
+148-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:52:13-54
+149            android:windowSoftInputMode="stateAlwaysHidden" />
+149-->[com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/421d44eefcaeaaf501208e31a906b756/transformed/jetified-zxing-android-embedded-4.3.0/AndroidManifest.xml:53:13-60
+150    </application>
+151
+152</manifest>

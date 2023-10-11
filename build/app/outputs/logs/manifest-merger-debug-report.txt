@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:3:5-34:19
+INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:5:5-66:19
 MERGED from [:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-14:19
 MERGED from [:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-14:19
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
@@ -22,13 +22,16 @@ MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] /Users/gopinath.puliy
 	android:name
 		INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
-INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
-MERGED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
+ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
+INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
+INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
+INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
+MERGED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
+MERGED from [:external_app_launcher] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/external_app_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-16:12
+MERGED from [:fluttertoast] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:qr_code_scanner] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/qr_code_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:uni_links] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.browser:browser:1.5.0] /Users/gopinath.puliyan/.gradle/caches/transforms-3/d12883dde0390e08dd2a1192741cec1b/transformed/browser-1.5.0/AndroidManifest.xml:17:1-22:12
@@ -65,32 +68,38 @@ INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/and
 INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
 		INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
 		INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
 		INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-35:12
+		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:1-67:12
 		INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:2:2-64
-MERGED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:2:2-64
-MERGED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:2:2-64
+ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:3:2-64
+MERGED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:3:2-64
+MERGED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:3:2-64
 	android:name
-		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:2:19-61
+		ADDED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml:3:19-61
 uses-sdk
 INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/android/app/src/main/AndroidManifest.xml
+MERGED from [:external_app_launcher] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/external_app_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:external_app_launcher] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/external_app_launcher/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:url_launcher_android] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/fluttertoast/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:qr_code_scanner] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/qr_code_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-9:67
 MERGED from [:qr_code_scanner] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/qr_code_scanner/intermediates/merged_manifest/debug/AndroidManifest.xml:6:5-9:67
+MERGED from [:uni_links] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:uni_links] /Users/gopinath.puliyan/Documents/webserverFlutter/SupplyChain/build/uni_links/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.window:window:1.0.0-beta04] /Users/gopinath.puliyan/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41

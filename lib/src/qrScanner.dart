@@ -1,14 +1,16 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:qr_scanner/src/qrScannerList.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:io' show Platform;
-// import 'dart:html' as html;
+// import 'dart:io' show Platform;
 import 'package:uni_links/uni_links.dart';
 import 'dart:async';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:external_app_launcher/external_app_launcher.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class QRScanner extends StatefulWidget {
   const QRScanner({Key? key}) : super(key: key);
@@ -26,6 +28,7 @@ class _QRScannerState extends State<QRScanner>
   bool isFlashOn = false;
   bool showCamera = false;
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
+
   // static const white = 0xFFFFFFFF);
   // static const double dimension_10 = 10.0;
   // static const double dimension_30 = 30.0;
@@ -39,9 +42,9 @@ class _QRScannerState extends State<QRScanner>
   @override
   void initState() {
     super.initState();
-    checkStatus();
+    // checkStatus();
+    initUniLinks();
   }
-
 
   bool isQueryParamPresent(String paramName, String url) {
     // Parse the URL
@@ -51,7 +54,42 @@ class _QRScannerState extends State<QRScanner>
     return uri.queryParameters.containsKey(paramName);
   }
 
-  void checkStatus()async{
+  Future<void> initUniLinks() async {
+    final LaunchApp launchApp = LaunchApp();
+    bool isInstalled;
+  try{
+     isInstalled = await LaunchApp.isAppInstalled(
+        androidPackageName: 'com.example.qr_scanner');
+  }catch(e){
+    isInstalled = false;
+  }
+
+    // Platform messages may fail, so we use a try/catch PlatformException.
+    // https://6524d945fb2158131521cd80--transcendent-mochi-c96a59.netlify.app/
+    final String customScheme = 'myapp://6525f74294c7a36128b91b90--dancing-semolina-ae1ea5.netlify.app';
+
+      try {
+        final initialLink = await getInitialLink();
+        if (initialLink != null) {
+          var uri = Uri.parse(initialLink);
+          var params = uri.queryParameters['param'];
+          if (params != null) {
+            Route route = MaterialPageRoute(
+                builder: (context) => qrlist(url: initialLink));
+            Navigator.pushReplacement(context, route);
+          }
+        }
+
+        // Parse the link and warn the user, if it is not correct,
+        // but keep in mind it could be `null`.
+      } on PlatformException {
+        // Handle exception by warning the user their action did not succeed
+        // return?
+      }
+
+  }
+
+  void checkStatus() async {
     print(kIsWeb);
     if (kIsWeb) {
       final initialLink = await getInitialLink();
@@ -147,7 +185,6 @@ class _QRScannerState extends State<QRScanner>
                       setState(() {
                         showCamera = !showCamera;
                       });
-
                     },
                     child: Text('QR Scanner'),
                   ),

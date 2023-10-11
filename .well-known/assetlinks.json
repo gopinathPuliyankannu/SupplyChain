@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.example.qr_scanner",
+            "sha256_cert_fingerprints": [
+                "60:28:D4:58:AF:00:31:12:F5:FF:B5:B8:7E:7B:56:F4:6C:C8:64:16:5E:40:B5:FA:A6:ED:9E:C0:4B:3E:A6:EE"
+            ]
+        }
+    }
+]
